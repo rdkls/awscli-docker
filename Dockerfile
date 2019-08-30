@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 LABEL maintainer="Tristan Morgan <tristan@vibrato.com.au>"
-LABEL Description="AWS-CLI in a minimal container"
+LABEL Description="AWS-CLI in a minimal container, with awsprocesscreds"
 
 ARG AWS_CLI_VERSION=1.14.42
 RUN apk add --no-cache python3 groff \
